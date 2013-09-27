@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+		<meta http-equiv="Content-Encoding" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="linlifengx@gmail.com">
+		<meta name="keywords" content="{{ ' '.join(meta.keywords) }}">
+		<link rel="stylesheet" href="../../stylesheets/stylesheet.css">
+	<title>{{ ' '.join(meta.title) }}</title>
+</head>
+<body>
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<a id="home_banner" href="../../index.html">Home</a>
+			<h1 id="project_title">Lin Lifeng's Blog</h1>
+			<h2 id="project_tagline">此情可待成追忆，只是当时是屌丝</h2>
+		</header>
+	</div>
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+{{ content }}
+		</section>
+		<section id="comments" class="inner">
+			<div id="disqus_thread"></div>
+    		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    	</section>
+	</div>
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p>Published with <a href="http://pages.github.com">GitHub Pages</a> | <a href="https://github.com/linlifengx">Fork me on GitHub</a></p>
+		</footer>
+	</div>
+    <script type="text/javascript">
+        var disqus_shortname = 'programfun';
+        var disqus_url = "http://programfun.ga/{{ url_path }}/";
+        var disqus_title = '{{ ' '.join(meta.title) }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+</body>
+</html>
